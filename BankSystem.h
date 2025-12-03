@@ -5,20 +5,19 @@
 #include <string>
 #include "Account.h"
 
-/* Manages all accounts */
+// BankSystem handles multiple accounts
 class BankSystem {
 private:
     std::vector<Account> accounts;
 
-    int findAccountIndex(int accNum) const; // find account
+    int findAccountIndex(int accNum) const;
 
 public:
-    BankSystem(); 
+    BankSystem();
 
-    void createAccount(const std::string& name, int accountNumber); // add account
-    Account* getAccount(int accountNumber); // get account
-
-    void listAccounts() const; // show accounts
+    void createAccount(const std::string& name, int accountNumber);
+    Account* getAccount(int accountNumber);
+    void listAccounts() const;
 };
 
 #endif
