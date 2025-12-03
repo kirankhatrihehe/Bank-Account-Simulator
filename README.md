@@ -1,14 +1,17 @@
 # Bank Account Simulator
-A command-line program to simulate bank accounts with deposit, withdrawal, and balance display features.
+
+A simple console program to manage bank accounts. Users can create accounts, deposit and withdraw money, and view transaction history. This project helps practice basic C++ programming, object-oriented design, and file management concepts.
 
 ## Features
-- Create new accounts (Checking or Savings)
-- Deposit money
-- Withdraw money with account-specific rules
-- Display account information
-- Optional: Apply interest to Savings accounts
+- **Create New Account**: Add a new bank account with owner name and account number.
+- **Deposit Money**: Add money to an existing account.
+- **Withdraw Money**: Withdraw money from an account if balance is sufficient.
+- **Transaction History**: View a history of deposits and withdrawals for each account.
+- **List All Accounts**: Display all accounts with owner names and account numbers.
+- **Menu-driven Interface**: Simple menu allows easy navigation through features.
 
-## Building
+## How to Build
+This project uses CMake. To build the program:
 ```bash
 mkdir build
 cd build
