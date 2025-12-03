@@ -6,7 +6,7 @@
 //money record//
 class Transaction {
 private:
-    std::string type;   // "Deposit" or "Withdrawal"
+    std::string type;   // "we can do Deposit" or "Withdrawal"
     double amount;
     std::string timestamp;
 
