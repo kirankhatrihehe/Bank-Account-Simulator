@@ -4,11 +4,11 @@ A simple console program to manage bank accounts. Users can create accounts, dep
 
 ## Features
 - **Create New Account**: Add a new bank account with owner name and account number.
-- **Deposit Money**: Add money to an existing account.
+- **Deposit Money**: Adding money to an existing account.
 - **Withdraw Money**: Withdraw money from an account if balance is sufficient.
 - **Transaction History**: View a history of deposits and withdrawals for each account.
 - **List All Accounts**: Display all accounts with owner names and account numbers.
-- **Menu-driven Interface**: Simple menu allows easy navigation through features.
+- **Menu-driven Interface**: this will  allows easy navigation through features.
 
 ## How to Build
 This project uses CMake. To build the program:
