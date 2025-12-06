@@ -1,57 +1,86 @@
-#include "Bank.h"
 #include <iostream>
-#include <limits>
+#include "Account.h"
+#include "Bank.h"
 
 int main() {
     Bank bank;
     int choice;
 
     do {
-        std::cout << "\n--- Bank Menu ---\n";
-        std::cout << "1. Create Account\n2. Display Accounts\n0. Exit\nChoice: ";
+        // Display menu
+        std::cout << "\n=== Bank Menu ===\n";
+        std::cout << "1. Create Account\n";
+        std::cout << "2. Deposit Money\n";
+        std::cout << "3. Withdraw Money\n"; // New feature
+        std::cout << "4. Show Account Balance\n";
+        std::cout << "5. Exit\n";
+        std::cout << "Enter your choice: ";
         std::cin >> choice;
 
-        if (std::cin.fail()) {
-            std::cin.clear();
-            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-            std::cout << "Invalid input. Please enter a number.\n";
-            continue;
-        }
-
-        if (choice == 1) {
+        if(choice == 1) {
+            // Create new account
+            int accNum;
             std::string name;
-            double balance;
-
-            std::cout << "Enter name: ";
+            double initialBalance;
+            std::cout << "Enter account number: ";
+            std::cin >> accNum;
             std::cin.ignore();
+            std::cout << "Enter owner name: ";
             std::getline(std::cin, name);
-
-            if (name.empty()) {
-                std::cout << "Name cannot be empty.\n";
-                continue;
-            }
-
             std::cout << "Enter initial balance: ";
-            std::cin >> balance;
-
-            if (std::cin.fail() || balance < 0) {
-                std::cin.clear();
-                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-                std::cout << "Invalid balance. Must be non-negative.\n";
-                continue;
-            }
-
-            Account acc(name, balance);
+            std::cin >> initialBalance;
+            Account acc(accNum, name, initialBalance);
             bank.addAccount(acc);
             std::cout << "Account created successfully!\n";
 
-        } else if (choice == 2) {
-            bank.displayAccounts();
-        } else if (choice != 0) {
+        } else if(choice == 2) {
+            // Deposit money
+            int accNum;
+            double amount;
+            std::cout << "Enter account number: ";
+            std::cin >> accNum;
+            std::cout << "Enter amount to deposit: ";
+            std::cin >> amount;
+            if(bank.depositToAccount(accNum, amount)) {
+                std::cout << "Deposit successful!\n";
+            } else {
+                std::cout << "Deposit failed. Check account number or amount.\n";
+            }
+
+        } else if(choice == 3) {
+            // Withdraw money
+            int accNum;
+            double amount;
+            std::cout << "Enter account number: ";
+            std::cin >> accNum;
+            std::cout << "Enter amount to withdraw: ";
+            std::cin >> amount;
+            if(bank.withdrawFromAccount(accNum, amount)) {
+                std::cout << "Withdrawal successful!\n"; 
+            } else {
+                std::cout << "Withdrawal failed. Check account number or balance.\n";
+            }
+
+        } else if(choice == 4) {
+            // Show account balance
+            int accNum;
+            std::cout << "Enter account number: ";
+            std::cin >> accNum;
+            Account* acc = bank.findAccount(accNum);
+            if(acc != nullptr) {
+                std::cout << "Account Balance: $" << acc->getBalance() << "\n";
+            } else {
+                std::cout << "Account not found.\n";
+            }
+
+        } else if(choice == 5) {
+            std::cout << "Exiting...\n"; // Exit program
+
+        } else {
             std::cout << "Invalid choice. Try again.\n";
         }
 
-    } while (choice != 0);
+    } while(choice != 5);
 
     return 0;
 }
