@@ -9,7 +9,9 @@ A simple console program to manage bank accounts. Users can create accounts, dep
 - **Transaction History**: View a history of deposits and withdrawals for each account.
 - **List All Accounts**: Display all accounts with owner names and account numbers.
 - **Menu-driven Interface**: this will  allows easy navigation through features.
-
+##In Progress
+ **Withdrawals
+ **Full input validation & error handling for all features
 ## How to Build
 This project uses CMake. To build the program:
 ```bash
