@@ -1,35 +1,29 @@
 cmake_minimum_required(VERSION 3.10)
-project(BankAccountSimulator)
+project(BankSimulator)
 
-# Set C++ standard
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Include directories
 include_directories(include)
 
-# Source files for the main program
+# Source files
 set(SOURCES
     src/main.cpp
-    src/Account.cpp
-    src/Bank.cpp
+    src/account.cpp
+    src/bank.cpp
 )
 
-
-add_executable(BankSimulator ${SOURCES})
+# Build main executable
+add_executable(BankApp ${SOURCES})
 
 # Enable testing
 enable_testing()
 
-# Source files for testing
-set(TEST_SOURCES
-    tests/test_feature.cpp
-    src/Account.cpp
-    src/Bank.cpp
-)
+# Deposit test executable
+add_executable(test_deposit tests/test_deposit.cpp src/account.cpp src/bank.cpp)
+add_test(NAME DepositTests COMMAND test_deposit)
 
-# Build the test executable
-add_executable(test_feature ${TEST_SOURCES})
-
-# Register the test with CTest
-add_test(NAME FeatureTests COMMAND test_feature)
+# Withdraw test executable
+add_executable(test_withdraw tests/test_withdraw.cpp src/account.cpp src/bank.cpp)
+add_test(NAME WithdrawTests COMMAND test_withdraw)
