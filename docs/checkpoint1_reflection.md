@@ -11,8 +11,7 @@ I implemented the **Create Account** feature for the Bank Account Simulator. Use
 ## What I Learned
 - How to design and implement C++ classes with constructors, getters, and setters
 - How to manage multiple objects using a manager class (`Bank`)
-- How to write simple automated tests using `assert` and CTest
-- Importance of clear menus and user prompts
+- Importance of clearcommand and user prompts
 
 ## Time Spent
 Approximately 3- 4 hours
