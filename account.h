@@ -2,34 +2,30 @@
 #define ACCOUNT_H
 
 #include <string>
-using namespace std;
 
 class Account {
-protected:
+private:
     int accountNumber;
-    string accountHolderName;
+    std::string ownerName;
     double balance;
 
 public:
-    // Constructor
-    Account(int accNum, const string& name, double initialBalance);
+    // Constructors
+    Account();
+    Account(int accNum, const std::string& name, double initialBalance);
 
-    //obtain
+    // Getters
     int getAccountNumber() const;
-    string getAccountHolderName() const;
+    std::string getOwnerName() const;
     double getBalance() const;
 
-    // Basic functions
+    // Setters
+    void setOwnerName(const std::string& name);
+    void setBalance(double amount);
+
+    // Core feature
     void deposit(double amount);
-    
-    // doing withdrwal in virtual
-    virtual bool withdraw(double amount);
-
-    // Virtual display
-    virtual void displayInfo() const;
-
-    // Virtual destructor
-    virtual ~Account() {}
+    void withdraw(double amount);  // Optional now, can implement later
 };
 
 #endif
