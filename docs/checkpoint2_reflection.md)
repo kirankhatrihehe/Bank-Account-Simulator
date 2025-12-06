@@ -1,0 +1,22 @@
+# Checkpoint 2 Reflection
+
+## What I Implemented
+- Added withdraw money feature
+- Validates amount and checks balance
+- Integrated into main menu and Bank class
+
+## Challenges
+- Ensuring correct balance validation
+- Handling invalid inputs gracefully
+
+## What I Learned
+- How to extend a feature on an existing class
+- Importance of testing edge cases like overdraw
+
+## Testing Results
+- Normal withdraw
+- Overdraw attempt 
+- Withdraw via Bank class 
+
+## Time Spent
+~3 hours
