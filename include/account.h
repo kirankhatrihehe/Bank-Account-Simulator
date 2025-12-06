@@ -24,8 +24,8 @@ public:
     void setBalance(double amount);
 
     // Core feature
-    void deposit(double amount);
-    void withdraw(double amount);  // Optional now, can implement later
+   void deposit(double amount);
+   bool withdraw(double amount);    // New function  
 };
 
 #endif
