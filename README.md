@@ -12,8 +12,8 @@ A simple console program to manage bank accounts. Users can create accounts, dep
 
 
 ## In Progress
-**withdrawals
- **Full input validation & error handling for all features
+**withdrawals**
+ **Full input validation & error handling for all features**
 ## How to Build
 This project uses CMake. To build the program:
 ```bash
