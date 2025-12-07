@@ -1,7 +1,7 @@
 # Bank Account Simulator
 
 ## Project Overview
-A simple bank account simulator in C++ that allows users to deposit and withdraw money. The project uses classes `Account` and `Bank` to manage accounts and balances.
+A simple bank account simulator in C++ that allows users to deposit and withdraw money. The project uses classes Account and Bank to manage accounts and balances.
 
 
 ## Current Status
