@@ -17,12 +17,12 @@ A simple bank account simulator in C++ that allows users to deposit and withdraw
   - Integrated into main menu and Bank class.
 
 **In Progress**:
-- ⏳ Additional features (e.g., account search, transaction history)
+-  Additional features (e.g., account search, transaction history)
 
 **Planned Features**:
-- 📋 Display all accounts
-- 📋 Save/load account data
-- 📋 Transaction summary/statistics
+-  Display all accounts
+-  Save/load account data
+-  Transaction summary/statistics
 
 **Known Issues**:
 - Input validation is basic (e.g., letters entered instead of numbers may crash)
