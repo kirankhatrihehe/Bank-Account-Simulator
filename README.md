@@ -16,7 +16,8 @@ A simple bank account simulator in C++ that allows users to deposit and withdraw
   - Integrated into main menu and Bank class.
   - Feature 3: View Account Details
   - Users can view full details of an account:  Account number, owner name, and balance.
-
+**AI USES**
+ - ChatGPT was used only to clarify ideas and provide guidance. I wrote all the actual code and test cases myself.
 **In Progress**:
 -  Additional features (e.g., account search, transaction history)
 
