@@ -1,21 +1,38 @@
 # Bank Account Simulator
 
-A simple console program to manage bank accounts. Users can create accounts, deposit and withdraw money, and view transaction history. This project helps practice basic C++ programming, object-oriented design, and file management concepts.
+## Project Overview
+A simple bank account simulator in C++ that allows users to deposit and withdraw money. The project uses classes `Account` and `Bank` to manage accounts and balances.
 
-## Features
-- **Create New Account**: Add a new bank account with owner name and account number.
-- **Deposit Money**: Adding money to an existing account.
-- **Withdraw Money**: Withdraw money from an account if balance is sufficient.
-- **Transaction History**: View a history of deposits and withdrawals for each account.
-- **List All Accounts**: Display all accounts with owner names and account numbers.
-- **Menu-driven Interface**: this will  allows easy navigation through features.
+---
 
+## Current Status
 
-## In Progress
-- **withdrawals**
--  **Full input validation & error handling for all features**
-## How to Build
-This project uses CMake. To build the program:
+**Implemented Features**:
+-  Feature 1: Deposit Money
+  - Users can deposit money into an account.
+  - Validates input to prevent negative deposits.
+-  Feature 2: Withdraw Money
+  - Users can withdraw money from an account.
+  - Validates balance to prevent overdraft.
+  - Integrated into main menu and Bank class.
+
+**In Progress**:
+- ⏳ Additional features (e.g., account search, transaction history)
+
+**Planned Features**:
+- 📋 Display all accounts
+- 📋 Save/load account data
+- 📋 Transaction summary/statistics
+
+**Known Issues**:
+- Input validation is basic (e.g., letters entered instead of numbers may crash)
+- No persistent storage (all data is in-memory)
+
+---
+
+## How to Build and Run
+
+### Using CMake
 ```bash
 mkdir build
 cd build
