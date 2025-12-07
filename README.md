@@ -18,11 +18,6 @@ A simple bank account simulator in C++ that allows users to deposit and withdraw
 **In Progress**:
 -  Additional features (e.g., account search, transaction history)
 
-**Planned Features**:
--  Display all accounts
--  Save/load account data
--  Transaction summary/statistics
-
 **Known Issues**:
 - Input validation is basic (e.g., letters entered instead of numbers may crash)
 - No persistent storage (all data is in-memory)
