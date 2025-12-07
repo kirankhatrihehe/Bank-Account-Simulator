@@ -15,7 +15,8 @@ A simple bank account simulator in C++ that allows users to deposit and withdraw
   - Validates balance to prevent overdraft.
   - Integrated into main menu and Bank class.
   - Feature 3: View Account Details
-  -Users can view full details of an account: account number, owner name, and balance.
+  -Users can view full details of an account:
+   -account number, owner name, and balance.
 
 **In Progress**:
 -  Additional features (e.g., account search, transaction history)
