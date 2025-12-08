@@ -23,13 +23,33 @@ Features implemented:
    - Validates invalid account numbers.
    - Works well with Features 1 and 2.
 
-What the project does well:
+**What the project does well:**
 - Clean class structure (Account and Bank)
 - Good input validation
 - Easy-to-understand menu
 - Features integrate smoothly together
+## Section 2: What Remains
 
-Section 2: What I Learned
+**Unimplemented features from original plan:**  
+- Saving/loading accounts (File I/O)  
+- Listing all accounts  
+- Transfer money between accounts  
+- Better handling of non-numeric input  
+- More advanced banking features (interest, logs)
+
+**Remaining bugs or issues:**  
+- No persistent data (everything resets when program closes)  
+- Accounts can have duplicate names  
+- Program crashes if letters are entered instead of numbers  
+- Some messages could be more descriptive
+
+**What would make the project more complete?**  
+- Implement file save/load  
+- Add a “show all accounts” list  
+- Create a transaction history  
+- Add automated tests for all features  
+
+**Section 3: What I Learned**
 Technical skills learned:
 - How to design classes with constructors and methods
 - Separating project files into .h and .cpp
@@ -38,19 +58,19 @@ Technical skills learned:
 - Writing safer code with input validation
 - Understanding multi-file C++ compilation
 
-Challenges faced:
+**Challenges faced:**
 - Making the withdraw function handle all cases
 - Getting Bank::findAccount to work properly
 - Making sure new features didn’t break old ones
 - Understanding how to structure test cases
 
-What I would do differently:
+**What I would do differently:**
 - Implement file saving earlier
 - Add stronger validation from the beginning
 - Write automated tests after each feature
 - Plan more modular menu functions
 
-## Section 5: Time Log 
+## Section 4: Time Log 
 
 | Activity                     | Time Spent        |
 |-------------------------------|-----------------|
@@ -60,7 +80,7 @@ What I would do differently:
 | Documentation & reflection    | ~2 hours        |
 
 
-AI Usage Statement
+##AI Usage Statement
 
 I used ChatGPT only for general guidance and explanation of concepts.
 I did NOT use AI to write my final code, fix code errors, or create my test cases.
