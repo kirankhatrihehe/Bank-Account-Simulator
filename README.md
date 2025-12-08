@@ -20,9 +20,6 @@ A simple bank account simulator in C++ that allows users to deposit and withdraw
 **AI USES**
  - ChatGPT was used only to clarify ideas and provide guidance. I wrote all the actual code and test cases myself.
    
-**In Progress**:
--  Additional features (e.g., account search, transaction history)
-
 **Known Issues**:
 - Input validation is basic (e.g., letters entered instead of numbers may crash)
 - No persistent storage (all data is in-memory)
