@@ -22,7 +22,7 @@ A simple bank account simulator in C++ that allows users to deposit and withdraw
    
 **Known Issues**:
 - Input validation is basic (e.g., letters entered instead of numbers may crash)
-- No persistent storage (all data is in-memory)
+- Storage is temporary (all data is in-memory)
 
 
 ## How to Build and Run
