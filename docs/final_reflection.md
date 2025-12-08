@@ -1,134 +1,131 @@
+final_reflection.md
 Final Reflection — Bank Account Simulator
 Section 1: Project Summary
 
 What is your project?
-My project is a Bank Account Simulator written in C++. It is a simple, menu-driven banking system that allows users to create accounts, deposit money, withdraw money, and view account details. The goal of the project was to practice object-oriented design, multi-file C++ structure, and implementing features step-by-step across checkpoints.
+My project is a Bank Account Simulator written in C++. It allows users to create accounts, deposit money, withdraw money, and view account details. It helped me practice object-oriented programming and C++ project structure.
 
 What features did you implement?
 
-Feature 1: Deposit Money
+✔ Feature 1: Deposit Money
 
-Users can add money to an account.
+Users can deposit an amount into an account.
 
-Validates inputs and prevents negative deposits.
+Prevents negative deposits.
 
-Fully implemented and tested.
+Fully functional and tested.
 
-Feature 2: Withdraw Money
+✔ Feature 2: Withdraw Money
 
-Users can withdraw money safely.
+Users can withdraw money with safety checks.
 
-Checks if the amount is positive.
+Prevents overdraft and invalid withdrawals.
 
-Prevents overdraft and handles insufficient balance.
+Integrated smoothly with the Bank class.
 
-Integrated with the Bank class and tested.
+✔ Feature 3: View Account Details
 
-Feature 3: View Account Details
+Users can view account number, owner name, and balance.
 
-Users can enter an account number to see balance and owner name.
+Validates invalid account numbers.
 
-Returns error messages for invalid account numbers.
-
-Integrates smoothly with previous features.
+Works well with Features 1 and 2.
 
 What does your project do well?
 
-Has clean class structure (Account and Bank).
+Clean class structure (Account and Bank)
 
-Menu navigation is simple, clear, and user friendly.
+Good input validation
 
-Input validation prevents invalid transactions.
+Easy-to-understand menu
 
-Code is consistent and easy to read.
-
-All three features work smoothly together.
+Features integrate smoothly together
 
 Section 2: What Remains
-
 Unimplemented features from original plan:
 
-Saving and loading accounts from a file (File I/O).
+Saving/loading accounts (File I/O)
 
-Listing all accounts at once.
+Listing all accounts
 
-Transfer money between two accounts.
+Transfer money between accounts
 
-More advanced menu formatting.
+Better handling of non-numeric input
 
-Stronger input validation (e.g., handling letters in number fields).
+More advanced banking features (interest, logs)
 
-Bugs / Issues:
+Remaining bugs or issues:
 
-No data persistence — accounts reset when program closes.
+No persistent data (everything resets when program closes)
 
-Multiple accounts can use the same name (not necessarily wrong but can be confusing).
+Accounts can have duplicate names
 
-Menu does not stop users from typing letters instead of numbers.
+Program crashes if letters are entered instead of numbers
 
-Some error messages could be improved for clarity.
+Some messages could be more descriptive
 
-What would make the project “complete”:
+What would make the project more complete?
 
-A full save/load feature using text or JSON files.
+Implement file save/load
 
-A “show all accounts” table to make the system easier to inspect.
+Add a “show all accounts” list
 
-Full CTest-based automated tests for all features.
+Create a transaction history
 
-More polished interface and additional banking features (e.g., transfers, interest).
+Add automated tests for all features
 
 Section 3: Time Estimates for Remaining Work
-Remaining Feature	Time Estimate	Priority
+✅ GitHub-friendly table:
+Remaining Work	Time Estimate	Priority
 File save/load system	2–3 hours	High
-List all accounts	1 hour	Medium
-Input validation improvements	1–2 hours	Must-have
-Automated tests for all features	2 hours	Must-have
-Money transfer feature	1–1.5 hours	Optional
+List all accounts	1–1.5 hours	Medium
+Input validation upgrades	1–2 hours	Must-have
+Full automated CTest suite	2 hours	Must-have
+Money transfer system	1 hour	Optional
 Section 4: What I Learned
+Technical skills I learned:
 
-Technical Skills Learned:
+How to design classes with constructors and methods
 
-How to design C++ classes with constructors, getters, and setters.
+Separating project files into .h and .cpp
 
-How to separate code using .h and .cpp files.
+Using vectors in the Bank class to store accounts
 
-Using vectors inside classes to store multiple objects.
+Implementing menu-driven interfaces
 
-Managing interactions between two classes (Bank managing many Account objects).
+Writing safer code with input validation
 
-Creating and testing interactive menu systems.
+Understanding multi-file C++ compilation
 
-Handling edge cases like negative numbers, invalid account numbers, and overdrafts.
+Challenges I faced:
 
-Hardest Parts:
+Making the withdraw function handle all cases
 
-Making sure withdraw logic didn’t break any existing code.
+Getting Bank::findAccount to work properly
 
-Ensuring the Bank class handled invalid account lookups safely.
+Making sure new features didn’t break old ones
 
-Integrating each new feature into the menu without errors.
-
-Debugging tests and making the logic match expected results.
+Understanding how to structure test cases
 
 What I would do differently:
 
-Implement error handling earlier.
+Implement file saving earlier
 
-Add automated tests immediately after each feature was created.
+Add stronger validation from the beginning
 
-Start working on file I/O sooner.
+Write automated tests after each feature
 
-Plan a more modular menu system from the beginning.
+Plan more modular menu functions
 
 Section 5: Time Log
+✅ GitHub-friendly table:
 Activity	Time Spent
-Planning and structure	~3 hours
-Coding all three features	~8–9 hours
-Manual testing & debugging	~4 hours
-Documentation, README, reflections	~2 hours
+Planning & design	~3 hours
+Implementing features	~8–9 hours
+Testing & debugging	~4 hours
+Documentation & reflection	~2 hours
 AI Usage Statement
 
-I used ChatGPT only for general guidance, such as understanding what parts I was missing, how to plan the next step, and how to improve organization.
-I did not use AI to write my full code, fix errors, or generate tests.
-All implementation, logic, feature integration, and test writing were completed by me.
+I used ChatGPT only for general guidance and explanation of concepts.
+I did NOT use AI to write my final code, fix code errors, or create my test cases.
+All coding, logic, debugging, and implementation decisions were fully done by me.
