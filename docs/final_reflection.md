@@ -50,14 +50,15 @@ What I would do differently:
 - Write automated tests after each feature
 - Plan more modular menu functions
 
-Section 3: Time Log
--------------------
-Activity                     | Time Spent
-------------------------------------------
-Planning & design             | ~3 hours
-Implementing features         | ~8–9 hours
-Testing & debugging           | ~4 hours
-Documentation & reflection    | ~2 hours
+## Section 5: Time Log 
+
+| Activity                     | Time Spent        |
+|-------------------------------|-----------------|
+| Planning & design             | ~3 hours        |
+| Implementing features         | ~8–9 hours      |
+| Testing & debugging           | ~4 hours        |
+| Documentation & reflection    | ~2 hours        |
+
 
 AI Usage Statement
 I used ChatGPT only for general guidance and explanation of concepts.
